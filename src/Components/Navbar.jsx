@@ -15,11 +15,12 @@ export default function Header() {
       <div className="sticky top-0 w-full h-20 shadow-md z-[100] bg-gradient-to-b from-sky-950 to-sky-700 text-white">
         <div className="flex justify-between  items-center overflow-hidden w-full h-full px-4  2xl:px-16 py-10">
           <Link to="/">
-            <img
+            {/* <img
               className="w-16 h-16 rounded-full"
               src="/name.png"
               alt="Logo"
-            />
+            /> */}
+            <h1 className="border-b border-transparent text-xl uppercase hover:border-b hover:border-gray">Najmus Saqib</h1>
 
            
           </Link>
@@ -38,7 +39,13 @@ export default function Header() {
                 <Link to={"/projects"}>Projects</Link>
               </li>
               <li className="border-b border-transparent ml-10 text-sm uppercase hover:border-b hover:border-gray">
-                <button className="bg-white rounded-2xl text-black w-16 h-8"><Link to={"/skills"}>Skills</Link></button>
+                <Link to={"/certificates"}>Certificates</Link>
+              </li>
+              <li className="border-b border-transparent ml-10 text-sm uppercase hover:border-b hover:border-gray">
+                <Link to={"/testimonials"}>Testemonails</Link>
+              </li>
+              <li className="border-b border-transparent ml-10 text-sm uppercase hover:border-b hover:border-gray">
+              <Link className="bg-white rounded-2xl text-black p-2 " to={"/skills"}>Skills</Link>
               </li>
             </ul>
           </div>
@@ -58,11 +65,12 @@ export default function Header() {
         >
           <div className="left-0 overflow-hidden">
             <Link to="/">
-              <img
+              {/* <img
                 className="w-12 h-12"
                 src="/name.png"
                 alt="Logo"
-              />
+              /> */}
+                          <h1 className="border-b border-transparent text-xl uppercase hover:border-b hover:border-gray">Najmus Saqib</h1>
              
             </Link>
           
@@ -83,6 +91,12 @@ export default function Header() {
               </li>
               <li className="py-4">
                 <Link to={"/skills"}>Skills</Link>
+              </li>
+              <li className="py-4">
+                <Link to={"/certificates"}>Certifictes</Link>
+              </li>
+              <li className="py-4">
+                <Link to={"/testimonials"}>Testemonails</Link>
               </li>
             </ul>
           </div>

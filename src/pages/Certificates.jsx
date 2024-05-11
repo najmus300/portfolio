@@ -1,21 +1,14 @@
-import React from "react";
-import CarosualProjects from '../Components/CarosualProjects'
+import React from 'react'
 
-const ArticlePage = () => {
-   
-    return (
+const Certificates = () => {
+  return (
+    <div className="bg-sky-700 sm:h-full h-screen pb-12 text-white">
+    <h1 className='p-8 text-2xl'>Certifications:</h1>
+        <div class="p-6 flex justify-center items-center">
+         <img src='/Certificate.png' alt='certificate' className='w-96 h-96'></img>
       
-        <div className="bg-sky-700 h-screen pb-12 text-white overflow-hidden w-full">
-          
-          <div className="flex flex-row justify-self-center pt-12 pl-24">
-        <div class="p-6">
-          <h2 class="text-lg font-semibold mb-4">Projects</h2>
-        
         </div>
-
-        
-      </div>
-      <CarosualProjects/>
+   
 
       <div class="flex flex-col items-center justify-center mt-16">
         <h2 class="text-lg font-semibold mb-4">
@@ -33,9 +26,9 @@ const ArticlePage = () => {
         </p>
       </div>
 
-     
+    
     </div>
-    );
+  )
 }
 
-export default ArticlePage;
+export default Certificates

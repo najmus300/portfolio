@@ -8,7 +8,7 @@ function MultipleItems() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -47,14 +47,14 @@ function MultipleItems() {
             </a>
           </div>
         </div>
-        <div className="slide relative">
+        {/* <div className="slide relative">
           <img src="/blogpic.png" alt="Slide 1" className="w-52 h-44" />
           <div className="absolute bottom-0 left-0 w-48 h-10 m-2 bg-sky-700 text-white text-center py-2">
             <a href="https://blogapplication-azure.vercel.app/" target="_blank">
               link
             </a>
           </div>
-        </div>
+        </div> */}
       </Slider>
     </div>
   );
